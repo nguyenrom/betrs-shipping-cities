@@ -106,25 +106,25 @@ function woocommerce_shipping_cities_init() {
 		function add_settings_section( $instance_settings ) {
 			
 			$instance_settings['cities'] = array(
-				'title'		=> __( 'Shipping By City', 'betrs-sc' ),
+				'title'		=> __( 'Shipping By District', 'betrs-sc' ),
 				'settings'	=> array(
 					'cities_enabled' => array(
 						'title' 		=> __( 'Enable/Disable', 'woocommerce' ),
 						'type' 			=> 'checkbox',
-						'description' 	=> __( 'Further restrict this method to specific cities', 'betrs-sc' ),
+						'description' 	=> __( 'Further restrict this method to specific districts', 'betrs-sc' ),
 						'default' 		=> 'no',
 						),
 					'cities_inc_ex' => array(
 						'title' 		=> __( 'Region is...', 'betrs-sc' ),
 						'type' 			=> 'select',
 						'options'		=> array(
-											'including'	=> __( 'Including Cities', 'betrs-sc' ),
-											'excluding'	=> __( 'Excluding Cities', 'betrs-sc' ),
+											'including'	=> __( 'Including Districts', 'betrs-sc' ),
+											'excluding'	=> __( 'Excluding Districts', 'betrs-sc' ),
 											),
 						'default'		=> 'including',
 					),
 					'cities' => array(
-						'title' 		=> __( 'Allowed Cities', 'woocommerce' ),
+						'title' 		=> __( 'Allowed Districts', 'woocommerce' ),
 						'type' 			=> 'textarea',
 						'description' 	=> __( 'List one city name per line', 'betrs-sc' ),
 						'css'			=> 'height: 150px;'
